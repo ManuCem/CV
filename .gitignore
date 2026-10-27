@@ -1,0 +1,6 @@
+# Ignore everything by default
+*
+
+# Except the CV page and this file
+!.gitignore
+!CV.html
