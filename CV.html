@@ -147,6 +147,7 @@
   .lab-head { padding:8px 0 28px; } .lab-head + .g-row { border-top:0; }
   .lab-head + .g-row { padding-top:0; }
   .lab-head h3 { font-family:var(--serif); font-weight:600; font-size:clamp(2.6rem,7vw,3.8rem) !important; line-height:1; letter-spacing:.01em; text-transform:none !important; color:var(--text) !important; }
+  .g-q a, .lab-head h3 a { color:inherit; } .g-q a::after, .lab-head h3 a::after { content:" 97"; color:var(--accent); font-size:.7em; } .g-q a:hover, .lab-head h3 a:hover { text-decoration:underline; text-underline-offset:4px; text-decoration-color:var(--accent); }
   .lab-no { display:block; font-family:"Inter","Segoe UI",system-ui,sans-serif; font-size:.78rem; font-weight:600; letter-spacing:.24em; color:var(--accent); margin-bottom:12px; }
   .lab-head p { margin:8px 0 0; color:var(--muted); font-size:.92rem; max-width:640px; }
   .glance .lab-head:not(:first-child) { margin-top:36px; padding-top:44px; border-top:1px solid var(--line2); }
@@ -345,70 +346,70 @@
   <!-- Projects: short rows -->
   <div class="glance reveal">
     <div class="lab-head">
-      <h3><span class="lab-no">LAB 01</span>Macro Lab</h3>
+      <h3><span class="lab-no">LAB 01</span><a href="https://github.com/ManuCem/Macro-Quant-Lab" target="_blank" rel="noopener">Macro Lab</a></h3>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q">Was the VIX right in four market shocks?</p>
+        <p class="g-q"><a href="https://manucem.github.io/Macro-Quant-Lab/VIX/output/shocks.html" target="_blank" rel="noopener">Was the VIX right in four market shocks?</a></p>
         <ul class="g-list">
           <li>Compares each day's VIX (the ~30-day volatility forecast) with the volatility that actually followed over 21 trading days</li>
           <li>Covers the dot-com crash, 2008, Covid and the 2025 tariffs</li>
         </ul>
         <div class="g-stats"><div><b>0.7</b><span>correlation</span></div><div><b>84%</b><span>days VIX &gt; realized</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> the VIX is a good gauge but a biased one. It charges a premium for insurance in calm markets and underestimates the real crashes.</p>
-        <p class="g-links"><a href="https://manucem.github.io/Macro-Quant-Lab/VIX/output/shocks.html" target="_blank" rel="noopener">Dashboard ↗</a> <a href="https://github.com/ManuCem/Macro-Quant-Lab" target="_blank" rel="noopener">Repository ↗</a></p>
+        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="vix"></div></div>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q">Did near-zero rates bring a recovery?</p>
+        <p class="g-q"><a href="https://manucem.github.io/Macro-Quant-Lab/Rates_and_Phillips/rates_phillips.html" target="_blank" rel="noopener">Did near-zero rates bring a recovery?</a></p>
         <ul class="g-list">
           <li>2008: unemployment needed 75 months to recover, rates at the floor for 85</li>
           <li>Covid: recovery in 20 months, but core inflation hit 6.6%</li>
         </ul>
         <div class="g-stats"><div><b>75 vs 20</b><span>months to recover</span></div><div><b>6.6%</b><span>core inflation peak</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> cheap money bought a fast recovery after Covid, but the price was inflation. After 2008 it bought neither.</p>
-        <p class="g-links"><a href="https://manucem.github.io/Macro-Quant-Lab/Rates_and_Phillips/rates_phillips.html" target="_blank" rel="noopener">Dashboard ↗</a> <a href="https://github.com/ManuCem/Macro-Quant-Lab" target="_blank" rel="noopener">Repository ↗</a></p>
+        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="rates"></div></div>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q">Who sells more to the world than it buys?</p>
+        <p class="g-q"><a href="https://manucem.github.io/Macro-Quant-Lab/Deficit_Surplus/trade_balance.html" target="_blank" rel="noopener">Who sells more to the world than it buys?</a></p>
         <ul class="g-list">
           <li>Goods trade of 222 countries in 2024 from UN Comtrade, with each country's top 10 export and import partners</li>
           <li>Interactive D3 map: pick a country to see its top 3 buyers or sellers, numbered arrows, built phone-first</li>
         </ul>
         <div class="g-stats"><div><b>+$991 bn</b><span>China surplus</span></div><div><b>−$1.29 tn</b><span>US deficit</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> one deficit, the US, absorbs more than China's whole surplus. And the world's books do not balance: about −$194 bn is lost to freight costs, timing and re-exports.</p>
-        <p class="g-links"><a href="https://manucem.github.io/Macro-Quant-Lab/Deficit_Surplus/trade_balance.html" target="_blank" rel="noopener">Live map ↗</a> <a href="https://github.com/ManuCem/Macro-Quant-Lab" target="_blank" rel="noopener">Repository ↗</a></p>
+        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="trade"></div></div>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q">Is France now riskier than Italy?</p>
+        <p class="g-q"><a href="https://manucem.github.io/Macro-Quant-Lab/Yield_Curve/sovereign_spreads.html" target="_blank" rel="noopener">Is France now riskier than Italy?</a></p>
         <ul class="g-list">
           <li>10-year yields of Germany, France and Italy from the ECB data portal, monthly since 1999; the spread is each country's yield minus Germany's</li>
           <li>France's spread is back at the 2011 euro-crisis record, ~154 bp (Bloomberg, 20 Oct 2026); Italy's is ~107 bp</li>
         </ul>
         <div class="g-stats"><div><b>154 bp</b><span>France over Germany</span></div><div><b>5 of 12</b><span>months France paid more</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> Italy used to be the risky one. Today the market charges France as much or more, and insuring French debt costs more than insuring Italian debt.</p>
-        <p class="g-links"><a href="https://manucem.github.io/Macro-Quant-Lab/Yield_Curve/sovereign_spreads.html" target="_blank" rel="noopener">Dashboard ↗</a> <a href="https://github.com/ManuCem/Macro-Quant-Lab" target="_blank" rel="noopener">Repository ↗</a></p>
+        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="yield"></div></div>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q">Why do bonds and gold move with real yields?</p>
+        <p class="g-q"><a href="https://manucem.github.io/Macro-Quant-Lab/tips-gold-bonds/tips_gold_bonds.html" target="_blank" rel="noopener">Why do bonds and gold move with real yields?</a></p>
         <ul class="g-list">
           <li>Nominal yield = real yield (10-year TIPS) + expected inflation (breakeven): 5.1% = 2.65% + 2.3%, October 2026 reference values</li>
           <li>Gold pays no coupon, so the real yield is what you give up by holding it</li>
         </ul>
         <div class="g-stats"><div><b>2.65%</b><span>10y real yield</span></div><div><b>2.4%</b><span>inflation where bond = TIPS</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> the real yield, not the nominal one, is the price of waiting: it sets what bonds must pay and what gold costs to hold.</p>
-        <p class="g-links"><a href="https://manucem.github.io/Macro-Quant-Lab/tips-gold-bonds/tips_gold_bonds.html" target="_blank" rel="noopener">Live page ↗</a> <a href="https://github.com/ManuCem/Macro-Quant-Lab" target="_blank" rel="noopener">Repository ↗</a></p>
+        
       </div>
       <div class="g-chart wide"><div class="clean">
         <div class="clean-step"><span class="lbl">Identity · 10-year, Oct 2026</span><code>nominal = real + breakeven</code>
@@ -421,47 +422,47 @@
       </div></div>
     </div>
     <div class="lab-head">
-      <h3><span class="lab-no">LAB 02</span>Equity Lab</h3>
+      <h3><span class="lab-no">LAB 02</span><a href="https://manucem.github.io/Equity-Research-Lab/" target="_blank" rel="noopener">Equity Lab</a></h3>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q">SpaceX: is growth finally outrunning the spending?</p>
+        <p class="g-q"><a href="https://manucem.github.io/Equity-Research-Lab/SpaceX/" target="_blank" rel="noopener">SpaceX: is growth finally outrunning the spending?</a></p>
         <ul class="g-list">
           <li>Revenue $14.6 bn in Q3 2026 (+161% YoY); the SI segment became the largest, $7.6 bn vs $0.8 bn in Q1</li>
           <li>Capex was $48.1 bn in nine months, 1.8x revenue, so free cash flow is still negative</li>
         </ul>
         <div class="g-stats"><div><b>+161%</b><span>revenue growth YoY, Q3 2026</span></div><div><b>19%</b><span>operating margin, Q3 2026</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> operations turned profitable in three quarters, but capex still exceeds revenue. Cash, not margin, is what to watch.</p>
-        <p class="g-links"><a href="https://manucem.github.io/Equity-Research-Lab/SpaceX/" target="_blank" rel="noopener">Financial data ↗</a> <a href="https://github.com/ManuCem/Equity-Research-Lab" target="_blank" rel="noopener">Repository ↗</a></p>
+        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="spacex"></div></div>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q">Anthropic: did scale fix the cost problem?</p>
+        <p class="g-q"><a href="https://manucem.github.io/Equity-Research-Lab/Anthropic/" target="_blank" rel="noopener">Anthropic: did scale fix the cost problem?</a></p>
         <ul class="g-list">
           <li>Quarterly revenue rose from $376 m (Q1 2025) to $11,555 m (Q2 2026)</li>
           <li>Compute and infrastructure fell from 251% to 48% of revenue; gross margin 85% in the first half of 2026</li>
         </ul>
         <div class="g-stats"><div><b>251% → 48%</b><span>compute cost / revenue</span></div><div><b>$265.6 bn</b><span>purchase commitments</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> revenue grew faster than compute, so operations are close to break-even. The risk now is the $265.6 bn of purchase commitments, not the headline loss.</p>
-        <p class="g-links"><a href="https://manucem.github.io/Equity-Research-Lab/Anthropic/" target="_blank" rel="noopener">Financial data ↗</a> <a href="https://github.com/ManuCem/Equity-Research-Lab" target="_blank" rel="noopener">Repository ↗</a></p>
+        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="anthropic"></div></div>
     </div>
     <div class="lab-head">
-      <h3><span class="lab-no">LAB 03</span>Cloud Lab</h3>
+      <h3><span class="lab-no">LAB 03</span><a href="https://github.com/ManuCem/End-to-End-Quantitative-Pricing-Engine-Cloud-Data-Pipeline-AWS-" target="_blank" rel="noopener">Cloud Lab</a></h3>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q">Can messy CSVs become a pricing model, cheaply?</p>
+        <p class="g-q"><a href="https://github.com/ManuCem/End-to-End-Quantitative-Pricing-Engine-Cloud-Data-Pipeline-AWS-" target="_blank" rel="noopener">Can messy CSVs become a pricing model, cheaply?</a></p>
         <ul class="g-list">
           <li>10 messy CSV feeds cleaned with Python and regex on EC2, then stored in S3</li>
           <li>Glue and Athena validate the data with SQL, scanning about 90% less on Parquet</li>
         </ul>
         <div class="g-stats"><div><b>10</b><span>CSV feeds</span></div><div><b>−90%</b><span>data scanned</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> clean data and cheap storage matter more than the model.</p>
-        <p class="g-links"><a href="https://github.com/ManuCem/End-to-End-Quantitative-Pricing-Engine-Cloud-Data-Pipeline-AWS-" target="_blank" rel="noopener">Repository ↗</a> <a href="https://github.com/ManuCem/AWS-Governance-Cleanup-Tool" target="_blank" rel="noopener">Governance tool ↗</a></p>
+        
       </div>
       <div class="g-chart wide"><div class="clean">
         <div class="clean-step"><span class="lbl">Before · messy text</span><code>"Lenovo ThinkPad 15.6in, Intel i5 8GB RAM 256GB SSD, Win 11"</code></div>
