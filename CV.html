@@ -147,7 +147,8 @@
   .lab-head { padding:8px 0 28px; } .lab-head + .g-row { border-top:0; }
   .lab-head + .g-row { padding-top:0; }
   .lab-head h3 { font-family:var(--serif); font-weight:600; font-size:clamp(2.6rem,7vw,3.8rem) !important; line-height:1; letter-spacing:.01em; text-transform:none !important; color:var(--text) !important; }
-  .g-q a, .lab-head h3 a { color:inherit; } .g-q a::after, .lab-head h3 a::after { content:" 97"; color:var(--accent); font-size:.7em; } .g-q a:hover, .lab-head h3 a:hover { text-decoration:underline; text-underline-offset:4px; text-decoration-color:var(--accent); }
+  .g-q a, .lab-head h3 a { color:inherit; } .g-q a::after, .lab-head h3 a::after { content:" ↗"; color:var(--accent); font-size:.7em; } .g-q a:hover, .lab-head h3 a:hover { text-decoration:underline; text-underline-offset:4px; text-decoration-color:var(--accent); }
+  .g-open { margin:14px 0 0; } .g-open a { display:inline-block; font-size:.82rem; letter-spacing:.04em; padding:8px 16px; border:1px solid var(--accent); color:var(--accent); } .g-open a:hover { background:var(--accent); color:#000; text-decoration:none; }
   .lab-no { display:block; font-family:"Inter","Segoe UI",system-ui,sans-serif; font-size:.78rem; font-weight:600; letter-spacing:.24em; color:var(--accent); margin-bottom:12px; }
   .lab-head p { margin:8px 0 0; color:var(--muted); font-size:.92rem; max-width:640px; }
   .glance .lab-head:not(:first-child) { margin-top:36px; padding-top:44px; border-top:1px solid var(--line2); }
@@ -344,9 +345,9 @@
   <div class="sec-head reveal"><span class="num">04</span><h2>Projects</h2></div>
 
   <!-- Projects: short rows -->
-  <div class="glance reveal">
+  <div class="glance">
     <div class="lab-head">
-      <h3><span class="lab-no">LAB 01</span><a href="https://github.com/ManuCem/Macro-Quant-Lab" target="_blank" rel="noopener">Macro Lab</a></h3>
+      <h3><span class="lab-no">LAB 01</span><a href="https://manucem.github.io/Macro-Quant-Lab/" target="_blank" rel="noopener">Macro Lab</a></h3>
     </div>
     <div class="g-row">
       <div>
@@ -357,7 +358,6 @@
         </ul>
         <div class="g-stats"><div><b>0.7</b><span>correlation</span></div><div><b>84%</b><span>days VIX &gt; realized</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> the VIX is a good gauge but a biased one. It charges a premium for insurance in calm markets and underestimates the real crashes.</p>
-        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="vix"></div></div>
     </div>
@@ -370,7 +370,6 @@
         </ul>
         <div class="g-stats"><div><b>75 vs 20</b><span>months to recover</span></div><div><b>6.6%</b><span>core inflation peak</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> cheap money bought a fast recovery after Covid, but the price was inflation. After 2008 it bought neither.</p>
-        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="rates"></div></div>
     </div>
@@ -383,7 +382,6 @@
         </ul>
         <div class="g-stats"><div><b>+$991 bn</b><span>China surplus</span></div><div><b>−$1.29 tn</b><span>US deficit</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> one deficit, the US, absorbs more than China's whole surplus. And the world's books do not balance: about −$194 bn is lost to freight costs, timing and re-exports.</p>
-        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="trade"></div></div>
     </div>
@@ -396,7 +394,6 @@
         </ul>
         <div class="g-stats"><div><b>154 bp</b><span>France over Germany</span></div><div><b>5 of 12</b><span>months France paid more</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> Italy used to be the risky one. Today the market charges France as much or more, and insuring French debt costs more than insuring Italian debt.</p>
-        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="yield"></div></div>
     </div>
@@ -409,7 +406,6 @@
         </ul>
         <div class="g-stats"><div><b>2.65%</b><span>10y real yield</span></div><div><b>2.4%</b><span>inflation where bond = TIPS</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> the real yield, not the nominal one, is the price of waiting: it sets what bonds must pay and what gold costs to hold.</p>
-        
       </div>
       <div class="g-chart wide"><div class="clean">
         <div class="clean-step"><span class="lbl">Identity · 10-year, Oct 2026</span><code>nominal = real + breakeven</code>
@@ -426,27 +422,37 @@
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q"><a href="https://manucem.github.io/Equity-Research-Lab/SpaceX/" target="_blank" rel="noopener">SpaceX: is growth finally outrunning the spending?</a></p>
+        <p class="g-q"><a href="https://manucem.github.io/Equity-Research-Lab/Alphabet/" target="_blank" rel="noopener">Alphabet</a></p>
+        <ul class="g-list">
+          <li>Revenue +25% to $127.6 bn, Google Cloud +103% to $30.7 bn; operating income +30%</li>
+          <li>Capex $51.4 bn, 40% of revenue, so free cash flow was −$9.1 bn and buybacks stopped</li>
+        </ul>
+        <div class="g-stats"><div><b>+103%</b><span>Google Cloud revenue, Q3 2026</span></div><div><b>$51.4 bn</b><span>quarterly capex</span></div></div>
+        <p class="g-concl"><b>Conclusion:</b> record revenue and a higher operating margin, but earnings fell and free cash flow turned negative as capex doubled.</p>
+      </div>
+      <div class="g-chart wide"><div class="ichart" data-chart="alphabet"></div></div>
+    </div>
+    <div class="g-row">
+      <div>
+        <p class="g-q"><a href="https://manucem.github.io/Equity-Research-Lab/SpaceX/" target="_blank" rel="noopener">SpaceX</a></p>
         <ul class="g-list">
           <li>Revenue $14.6 bn in Q3 2026 (+161% YoY); the SI segment became the largest, $7.6 bn vs $0.8 bn in Q1</li>
           <li>Capex was $48.1 bn in nine months, 1.8x revenue, so free cash flow is still negative</li>
         </ul>
         <div class="g-stats"><div><b>+161%</b><span>revenue growth YoY, Q3 2026</span></div><div><b>19%</b><span>operating margin, Q3 2026</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> operations turned profitable in three quarters, but capex still exceeds revenue. Cash, not margin, is what to watch.</p>
-        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="spacex"></div></div>
     </div>
     <div class="g-row">
       <div>
-        <p class="g-q"><a href="https://manucem.github.io/Equity-Research-Lab/Anthropic/" target="_blank" rel="noopener">Anthropic: did scale fix the cost problem?</a></p>
+        <p class="g-q"><a href="https://manucem.github.io/Equity-Research-Lab/Anthropic/" target="_blank" rel="noopener">Anthropic</a></p>
         <ul class="g-list">
           <li>Quarterly revenue rose from $376 m (Q1 2025) to $11,555 m (Q2 2026)</li>
           <li>Compute and infrastructure fell from 251% to 48% of revenue; gross margin 85% in the first half of 2026</li>
         </ul>
         <div class="g-stats"><div><b>251% → 48%</b><span>compute cost / revenue</span></div><div><b>$265.6 bn</b><span>purchase commitments</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> revenue grew faster than compute, so operations are close to break-even. The risk now is the $265.6 bn of purchase commitments, not the headline loss.</p>
-        
       </div>
       <div class="g-chart wide"><div class="ichart" data-chart="anthropic"></div></div>
     </div>
@@ -462,7 +468,6 @@
         </ul>
         <div class="g-stats"><div><b>10</b><span>CSV feeds</span></div><div><b>−90%</b><span>data scanned</span></div></div>
         <p class="g-concl"><b>Conclusion:</b> clean data and cheap storage matter more than the model.</p>
-        
       </div>
       <div class="g-chart wide"><div class="clean">
         <div class="clean-step"><span class="lbl">Before · messy text</span><code>"Lenovo ThinkPad 15.6in, Intel i5 8GB RAM 256GB SSD, Win 11"</code></div>
@@ -734,10 +739,20 @@
   const SPACEX = { x: ["Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26", "Q3 26"],
     conn: [2474, 2588, 3097, 3228, 3257, 4291, 5248], si: [728, 737, 813, 923, 818, 2561, 7560], space: [865, 746, 1666, 809, 619, 962, 1767],
     opm: [0.66, -23.83, -4.9, -27.68, -41.39, -1.83, 19.15], fcf: [-3413, -3201, -3111, -4226, -9060, -15950, -9962] };
+  const ALPHABET = { x: ["Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26", "Q3 26"],
+    capex: [14276, 17197, 22446, 23953, 27851, 35674, 44924, 51355], fcf: [24837, 18953, 5301, 24461, 24551, 10116, -5855, -9065] };
   const ANTHROPIC = { x: ["Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"],
     rev: [376, 787, 1382, 2040, 4731, 11555], compute: [944, 1390, 2047, 2945, 3387, 5558] };
   document.querySelectorAll(".ichart").forEach(host => {
     const c = name => getComputedStyle(document.documentElement).getPropertyValue(name);
+    if (host.dataset.chart === "alphabet") {
+      const A = ALPHABET, ax = v => (v < 0 ? "−" : "") + Math.abs(v) / 1000;
+      makeCols(host, [
+        { label: "Capex", x: A.x, caption: "quarterly capital expenditure, $ bn", axis: ax, fmt: bn, fmtShort: v => (v / 1000).toFixed(1), series: [{ name: "Capex", color: c("--accent"), values: A.capex }] },
+        { label: "Free cash flow", x: A.x, caption: "operating cash flow minus capex, $ bn", axis: ax, fmt: bn, fmtShort: v => (v / 1000).toFixed(1), series: [{ name: "Free cash flow", color: c("--accent"), values: A.fcf }] }
+      ]);
+      return;
+    }
     if (host.dataset.chart === "spacex") {
       const S = SPACEX, ax = v => (v < 0 ? "−" : "") + Math.abs(v) / 1000;
       makeCols(host, [
